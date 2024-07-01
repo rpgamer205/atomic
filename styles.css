@@ -1,0 +1,117 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#feedback-summary {
+    margin-top: 40px;
+}
+
+#feedback-summary h2 {
+    margin-bottom: 20px;
+}
+
+#feedback-items {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#feedback-items li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+#feedback-items li:last-child {
+    border-bottom: none;
+}
+
+#feedback-stats {
+    margin-bottom: 20px;
+}
+
+#feedback-stats p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#feedback-stats span {
+    font-weight: bold;
+    color: #333;
+}

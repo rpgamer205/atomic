@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic - Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://i.postimg.cc/fbSwp13Q/istockphoto-1202037894-612x612-removebg-preview.png" alt="Logo Atomic">
+            <h1>Atomic</h1>
+            <p>Feedback de Produtos e Atendimento</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Avalie sua Experiência</h2>
+            <form id="feedback-form">
+                <div class="question">
+                    <label for="product-rating">Como você avalia o produto?</label>
+                    <select id="product-rating" name="product-rating" required>
+                        <option value="">Selecione...</option>
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★</option>
+                        <option value="3">★★★</option>
+                        <option value="2">★★</option>
+                        <option value="1">★</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="service-rating">Como você avalia o atendimento?</label>
+                    <select id="service-rating" name="service-rating" required>
+                        <option value="">Selecione...</option>
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★</option>
+                        <option value="3">★★★</option>
+                        <option value="2">★★</option>
+                        <option value="1">★</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="comments">Comentários adicionais:</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar Feedback</button>
+            </form>
+        </section>
+
+        <section id="feedback-summary" class="container">
+            <h2>Resumo dos Feedbacks</h2>
+            <div id="feedback-stats">
+                <p>Total de Feedbacks: <span id="total-feedbacks">0</span></p>
+                <p>Média de Avaliação do Produto: <span id="average-product-rating">0</span></p>
+                <p>Média de Avaliação do Atendimento: <span id="average-service-rating">0</span></p>
+            </div>
+
+            <ul id="feedback-items"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Atomic. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
